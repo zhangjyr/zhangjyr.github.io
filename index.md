@@ -14,12 +14,13 @@ where I work with [Dr. Yue Cheng](https://cs.gmu.edu/~yuecheng/) in [LeapLab](ht
 Before particiapting the Ph.D. program, I was a system architect that had over ten years of hands-on experience in system
 architecture and development.
 
-My research focuses on Distributed Systems and Cloud Computing.
+My research interests include distributed systems and cloud computing. Specifically, serverless computing breaks the traditional server-based monolithic application models into fine-grained functions and allows tenants to pay-per-use. My current research focuses on providing in-memory object storage which is completely built and deployed atop ephemeral cloud functions. A typical application of my research is to accelerate data analytics workloads.
 
 
 ### Publications
 * InfiniCache: Exploiting Ephemeral Serverless Functions to Build a Cost-Effective Memory Cache, USENIX FAST 2020  
-Ao Wang, **Jingyuan Zhang**, Xiaolong Ma, Ali Anwar, Lukas Rupprecht, Dimitrios Skourtis, Vasily Tarasov, Feng Yan, Yue Cheng  
+Ao Wang<sup>†</sup>, **Jingyuan Zhang**<sup>†</sup>, Xiaolong Ma, Ali Anwar, Lukas Rupprecht, Dimitrios Skourtis, Vasily Tarasov, Feng Yan, Yue Cheng  
+<sup>†</sup>These authors contributed equally to the work.  
 
 * In Search of a Fast and Efficient Serverless DAG Engine, PDSW 2019  
 Benjamin Carver, **Jingyuan Zhang**, Ao Wang, Yue Cheng
@@ -36,4 +37,5 @@ Benjamin Carver, **Jingyuan Zhang**, Ao Wang, Yue Cheng
 * 06/2003 - 11/2004, Programmer, NEC Solution China Co. Ltd.
 
 ### Selected Award
+* Student Grant, USENIX FAST 2020
 * Student Grant, USENIX NSDI 2019
