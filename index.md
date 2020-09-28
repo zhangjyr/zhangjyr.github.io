@@ -18,6 +18,9 @@ My research interests include distributed systems and cloud computing. Specifica
 
 
 ### Publications
+* Wukong: A Scalable and Locality-Enhanced Framework for Serverless Parallel Computing, ACM SoCC 2020
+Benjamin Carver, **Jingyuan Zhang**, Ao Wang, Ali Anwar, Panruo Wu, Yue Cheng
+
 * InfiniCache: Exploiting Ephemeral Serverless Functions to Build a Cost-Effective Memory Cache, USENIX FAST 2020  
 Ao Wang<sup>†</sup>, **Jingyuan Zhang**<sup>†</sup>, Xiaolong Ma, Ali Anwar, Lukas Rupprecht, Dimitrios Skourtis, Vasily Tarasov, Feng Yan, Yue Cheng  
 <sup>†</sup>These authors contributed equally to the work.  
@@ -29,6 +32,7 @@ Benjamin Carver, **Jingyuan Zhang**, Ao Wang, Yue Cheng
 **Jingyuan Zhang**, Ao Wang, Min Li, Yuan Chen, Yue Cheng
 
 ### Working Experience
+* 05/2020 - 08/2020, Research Intern, NetApp, Inc
 * 01/2019 - present, Graduate Research Assistant, George Mason University
 * 08/2018 - 12/2018, Graduate Teaching Assistant, George Mason University
 * 10/2015 – 06/2018, Principal Systems Architect, Shanghai Bamaying Education Technology Co. Ltd.
