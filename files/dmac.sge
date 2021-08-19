@@ -13,7 +13,7 @@ loglevel = warning
 # applied to system network proxy settings.)
 skip-proxy = 127.0.0.1, 192.168.0.0/16, 10.0.0.0/8, 172.16.0.0/12, 100.64.0.0/10, localhost, *.local
 # Override the DNS server provided by system.
-dns-server = 180.76.76.76 8.8.8.8, 8.8.4.4
+dns-server = 180.76.76.76, 8.8.8.8, 8.8.4.4
 # Enable external controller access. This is for Surge-CLI and other tools.
 # external-controller-access = apassword@127.0.0.1:8888
 
