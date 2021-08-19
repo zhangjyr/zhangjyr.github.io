@@ -71,9 +71,9 @@ socks-port = 6153
 #   The policy under cellular network. If not provide, the default policy will
 #   be used.
 [Proxy Group]
-SelectGroup = select, ProxyHTTP, ProxyHTTPS, DIRECT, REJECT
-AutoTestGroup = url-test, ProxySOCKS5, ProxySOCKS5TLS, url = http://www.google.com/generate_204
-SSIDGroup = ssid, default = ProxyHTTP, cellular = ProxyHTTP, SSIDName = ProxySOCKS5
+# SelectGroup = select, ProxyHTTP, ProxyHTTPS, DIRECT, REJECT
+# AutoTestGroup = url-test, ProxySOCKS5, ProxySOCKS5TLS, url = http://www.google.com/generate_204
+# SSIDGroup = ssid, default = ProxyHTTP, cellular = ProxyHTTP, SSIDName = ProxySOCKS5
 
 # This section declares outgoing policy rule
 # A rule contains three basic parts:
@@ -99,26 +99,26 @@ SSIDGroup = ssid, default = ProxyHTTP, cellular = ProxyHTTP, SSIDName = ProxySOC
 #   no-resolve: Optional (Default: false).
 #   Skip this rule if the request is using a domain.
 [Rule]
-DOMAIN-SUFFIX,appldnld.apple.com,DIRECT
-DOMAIN-SUFFIX,adcdownload.apple.com,DIRECT
-DOMAIN-SUFFIX,swcdn.apple.com,DIRECT
-DOMAIN-SUFFIX,phobos.apple.com,DIRECT
+# DOMAIN-SUFFIX,appldnld.apple.com,DIRECT
+# DOMAIN-SUFFIX,adcdownload.apple.com,DIRECT
+# DOMAIN-SUFFIX,swcdn.apple.com,DIRECT
+# DOMAIN-SUFFIX,phobos.apple.com,DIRECT
 
-DOMAIN-KEYWORD,google,ProxyHTTP
-DOMAIN-KEYWORD,facebook,SelectGroup
-DOMAIN-KEYWORD,blogspot,AutoTestGroup
-DOMAIN-KEYWORD,youtube,SSIDGroup
+# DOMAIN-KEYWORD,google,ProxyHTTP
+# DOMAIN-KEYWORD,facebook,SelectGroup
+# DOMAIN-KEYWORD,blogspot,AutoTestGroup
+# DOMAIN-KEYWORD,youtube,SSIDGroup
 
-DOMAIN-SUFFIX,apple.com,ProxyHTTPS
-DOMAIN-SUFFIX,ad.com,REJECT
+# DOMAIN-SUFFIX,apple.com,ProxyHTTPS
+# DOMAIN-SUFFIX,ad.com,REJECT
 
-IP-CIDR,192.168.0.0/16,DIRECT
-IP-CIDR,10.0.0.0/8,DIRECT
-IP-CIDR,172.16.0.0/12,DIRECT
-IP-CIDR,127.0.0.0/8,DIRECT
+# IP-CIDR,192.168.0.0/16,DIRECT
+# IP-CIDR,10.0.0.0/8,DIRECT
+# IP-CIDR,172.16.0.0/12,DIRECT
+# IP-CIDR,127.0.0.0/8,DIRECT
 
-GEOIP,CN,DIRECT
-FINAL,ProxyHTTP
+# GEOIP,CN,DIRECT
+# FINAL,ProxyHTTP
 
 # This section declares local DNS map
 # This is a equivalent function to /etc/hosts, with wildcard and alias support.
