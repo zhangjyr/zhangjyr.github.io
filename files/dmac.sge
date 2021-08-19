@@ -112,13 +112,14 @@ socks-port = 6153
 # DOMAIN-SUFFIX,apple.com,ProxyHTTPS
 # DOMAIN-SUFFIX,ad.com,REJECT
 
-# IP-CIDR,192.168.0.0/16,DIRECT
-# IP-CIDR,10.0.0.0/8,DIRECT
-# IP-CIDR,172.16.0.0/12,DIRECT
-# IP-CIDR,127.0.0.0/8,DIRECT
+IP-CIDR,192.168.0.0/16,DIRECT
+IP-CIDR,10.0.0.0/8,DIRECT
+IP-CIDR,172.16.0.0/12,DIRECT
+IP-CIDR,127.0.0.0/8,DIRECT
 
-# GEOIP,CN,DIRECT
+GEOIP,CN,DIRECT
 # FINAL,ProxyHTTP
+FINAL,DIRECT
 
 # This section declares local DNS map
 # This is a equivalent function to /etc/hosts, with wildcard and alias support.
