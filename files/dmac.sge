@@ -43,6 +43,8 @@ socks-port = 6153
 # ProxyHTTPS = http, 1.2.3.4, 443, username, password, tls=true // equivalent to "https, 1.2.3.4, 443, username, password"
 # ProxySOCKS5 = socks5, 1.2.3.4, 443, username, password
 # ProxySOCKS5TLS = socks5, 1.2.3.4, 443, username, password, tls=true
+ProxySS = custom,2600:1f11:f6f:2300:a5fc:9814:a17e:5485,56731,rc4-md5,v6a7Sx,https://zhangjyr.github.io/files/ss.module
+VideoSS = custom,sg10.yootoo6oocoo1oo.xyz,56731,rc4-md5,v6a7Sx,https://zhangjyr.github.io/files/ss.module
 
 # This section declares policy group
 # A policy group may contain multiple policies. It can be a proxy policy,
@@ -74,6 +76,8 @@ socks-port = 6153
 # SelectGroup = select, ProxyHTTP, ProxyHTTPS, DIRECT, REJECT
 # AutoTestGroup = url-test, ProxySOCKS5, ProxySOCKS5TLS, url = http://www.google.com/generate_204
 # SSIDGroup = ssid, default = ProxyHTTP, cellular = ProxyHTTP, SSIDName = ProxySOCKS5
+SelectGroup = select, ProxySS, VideoSS, DIRECT, REJECT
+AutoTestGroup = url-test, ProxySS, VideoSS, url = http://www.gstatic.com/generate_204
 
 # This section declares outgoing policy rule
 # A rule contains three basic parts:
@@ -99,26 +103,27 @@ socks-port = 6153
 #   no-resolve: Optional (Default: false).
 #   Skip this rule if the request is using a domain.
 [Rule]
-# DOMAIN-SUFFIX,appldnld.apple.com,DIRECT
-# DOMAIN-SUFFIX,adcdownload.apple.com,DIRECT
-# DOMAIN-SUFFIX,swcdn.apple.com,DIRECT
-# DOMAIN-SUFFIX,phobos.apple.com,DIRECT
+RULE-SET,LAN,DIRECT
 
-# DOMAIN-KEYWORD,google,ProxyHTTP
-# DOMAIN-KEYWORD,facebook,SelectGroup
-# DOMAIN-KEYWORD,blogspot,AutoTestGroup
-# DOMAIN-KEYWORD,youtube,SSIDGroup
+DOMAIN-KEYWORD,google,SelectGroup
+DOMAIN-KEYWORD,facebook,SelectGroup
+DOMAIN-KEYWORD,youtube,SelectGroup
 
-# DOMAIN-SUFFIX,apple.com,ProxyHTTPS
+# Streamers
+DOMAIN-SUFFIX,fast.com,VideoSS
+DOMAIN-SUFFIX,netflix.com,VideoSS
+DOMAIN-SUFFIX,netflix.net,VideoSS
+DOMAIN-SUFFIX,nflxext.com,VideoSS
+DOMAIN-SUFFIX,nflximg.com,VideoSS
+DOMAIN-SUFFIX,nflximg.net,VideoSS
+DOMAIN-SUFFIX,nflxso.net,VideoSS
+DOMAIN-SUFFIX,nflxvideo.net,VideoSS
+
 # DOMAIN-SUFFIX,ad.com,REJECT
-
-IP-CIDR,192.168.0.0/16,DIRECT
-IP-CIDR,10.0.0.0/8,DIRECT
-IP-CIDR,172.16.0.0/12,DIRECT
-IP-CIDR,127.0.0.0/8,DIRECT
 
 GEOIP,CN,DIRECT
 # FINAL,ProxyHTTP
+RULE-SET,/Users/deann/.ssh/gfwlist.conf,ProxySS
 FINAL,DIRECT
 
 # This section declares local DNS map
