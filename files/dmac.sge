@@ -44,7 +44,7 @@ socks-port = 6153
 # ProxySOCKS5 = socks5, 1.2.3.4, 443, username, password
 # ProxySOCKS5TLS = socks5, 1.2.3.4, 443, username, password, tls=true
 ProxySS = custom,sg03.yootoo6oocoo1oo.xyz,56731,rc4-md5,v6a7Sx,https://zhangjyr.github.io/files/ss.module
-VideoSS = custom,uk04.yootoo6oocoo1oo.xyz,56731,rc4-md5,v6a7Sx,https://zhangjyr.github.io/files/ss.module
+VideoSS = custom,krgame04.yootoo6oocoo1oo.xyz,56731,rc4-md5,v6a7Sx,https://zhangjyr.github.io/files/ss.module
 
 # This section declares policy group
 # A policy group may contain multiple policies. It can be a proxy policy,
