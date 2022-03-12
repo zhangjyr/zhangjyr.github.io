@@ -108,6 +108,7 @@ RULE-SET,LAN,DIRECT
 DOMAIN-KEYWORD,google,SelectGroup
 DOMAIN-KEYWORD,facebook,SelectGroup
 DOMAIN-KEYWORD,youtube,SelectGroup
+DOMAIN-SUFFIX,zoom.us,SelectGroup
 
 # Streamers
 DOMAIN-SUFFIX,fast.com,VideoSS
