@@ -120,6 +120,14 @@ DOMAIN-SUFFIX,nflximg.net,VideoSS
 DOMAIN-SUFFIX,nflxso.net,VideoSS
 DOMAIN-SUFFIX,nflxvideo.net,VideoSS
 
+USER-AGENT,Disney+*,VideoSS
+DOMAIN-SUFFIX,disneyplus.com,VideoSS
+DOMAIN-SUFFIX,disney-plus.net,VideoSS
+DOMAIN-SUFFIX,dssott.com,VideoSS
+DOMAIN-SUFFIX,bamgrid.com,VideoSS
+DOMAIN,cdn.registerdisney.go.com,VideoSS
+
+
 # DOMAIN-SUFFIX,ad.com,REJECT
 
 GEOIP,CN,DIRECT
