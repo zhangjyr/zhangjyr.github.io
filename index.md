@@ -8,16 +8,16 @@ layout: home
   style="float:right;">
   Jingyuan
 </h2>
-I am a Ph.D. student in the [Computer Science Department](https://cs.gmu.edu/) at [George Mason University](https://www2.gmu.edu/),
-where I work with [Dr. Yue Cheng](https://cs.gmu.edu/~yuecheng/) in [LeapLab](https://mason-leap-lab.github.io/).
+I am a Ph.D. candidate in the [Computer Science Department](https://cs.gmu.edu/) at [George Mason University](https://www.gmu.edu/), where I work with [Dr. Yue Cheng](https://tddg.github.io/) in [DS2 research lab](https://ds2-lab.github.io/). 
 
-Before particiapting the Ph.D. program, I was a system architect that had over ten years of hands-on experience in system
-architecture and development.
+Before particiapting the Ph.D. program, I was a system architect that had over ten years of hands-on experience in system architecture and development.
 
-My research interests include distributed systems and cloud computing. Specifically, serverless computing breaks the traditional server-based monolithic application models into fine-grained functions and allows tenants to pay-per-use. My current research focuses on providing in-memory object storage which is completely built and deployed atop ephemeral cloud functions. A typical application of my research is to accelerate data analytics workloads.
-
+My research interests broadly include distributed systems and cloud computing. Specifically, I study the serverless computing that includes the infrastructures of function-as-a-service (FaaS) and its stateful applications. My current research focuses on providing in-memory object storage which is completely built and deployed atop ephemeral cloud functions. A typical application of my research is to accelerate data analytics workloads and machine learning trainings.
 
 ### Publications
+* InfiniStore: Elastic Serverless Cloud Storage, VLDB 2023
+**Jingyuan Zhang**, Ao Wang, Xiaolong Ma, Benjamin Carver, Nicholas John Newman, Ali Anwar, Lukas Rupprecht, Dimitrios Skourtis, Vasily Tarasov, Feng Yan,  and Yue Cheng
+
 * Wukong: A Scalable and Locality-Enhanced Framework for Serverless Parallel Computing, ACM SoCC 2020
 Benjamin Carver, **Jingyuan Zhang**, Ao Wang, Ali Anwar, Panruo Wu, Yue Cheng
 
@@ -32,6 +32,9 @@ Benjamin Carver, **Jingyuan Zhang**, Ao Wang, Yue Cheng
 **Jingyuan Zhang**, Ao Wang, Min Li, Yuan Chen, Yue Cheng
 
 ### Working Experience
+* 08/2022 - present, Graduate Teaching Assistant, George Mason University
+* 05/2022 - 08/2022, Software Engineer Intern in Cloud Native Infrastrcuture Team, Bytedance, Inc
+* 05/2021 - 11/2021, Research Intern, Adobe Research
 * 05/2020 - 08/2020, Research Intern, NetApp, Inc
 * 01/2019 - present, Graduate Research Assistant, George Mason University
 * 08/2018 - 12/2018, Graduate Teaching Assistant, George Mason University
